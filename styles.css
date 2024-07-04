@@ -1,0 +1,36 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+    --header-height: 3rem;
+
+    /*colores*/
+    --first-color: #5B65F5;
+    --first-color-light: #C4C7F5;
+    --dark-color: #0E1026;
+    --white-color: #FBFBFB;
+  
+    /*tipos de letra*/
+    --body-font: 'Open Sans', sans-serif;
+    --nav-name-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --z-fixed: 100;
+  }
+
+  @media screen and (min-width: 768px) {
+    :root {
+      --nav-name-font-size: 1rem;
+      --normal-font-size: 1rem;
+    }
+  }
+
+  *,::before,::after{
+    box-sizing: border-box;
+  }
+
+  body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font); /*estilo de letra*/
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+  }
